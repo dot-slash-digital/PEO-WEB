@@ -86,6 +86,7 @@
 	- Stretched Layout
 	- Page Transitions
 	- Youtube Video Backgrounds
+    - *** Custom ***
 
 ---------------------------------------------------------------- */
 
@@ -1055,7 +1056,6 @@ body.stretched #header.full-header .container {
 }
 
 #logo img {
-	display: block;
 	max-width: 100%;
 }
 
@@ -3020,12 +3020,6 @@ body:not(.stretched) .slider-parallax .slider-parallax-inner { left: auto; }
 
 /* Video Overlay
 -----------------------------------------------------------------*/
-
-.video-wrap {
-	overflow: hidden;
-	width: 100%;
-	position: relative;
-}
 
 .video-wrap video {
 	position: relative;
@@ -8765,6 +8759,8 @@ body:not(.device-touch) .social-icon i {
 .si-colored.si-pinterest { background-color: #C8232C !important; }
 .si-fivehundredpx:hover,
 .si-colored.si-fivehundredpx { background-color: #111 !important; }
+.si-mail:hover,
+.si-colored.si-mail { background-color: #89C507 !important; }
 
 
 /* Social Icons Text Color
@@ -13572,4 +13568,31 @@ body:not(.no-transition) #wrapper,
 	text-shadow: none !important;
 }
 
+/* ----------------------------------------------------------------
+	*** Custom ***
+-----------------------------------------------------------------*/
 
+/* Icons */
+
+.icons-menu {
+    margin: 0 15px 0 15px;
+    color: #444444 !important;
+}
+
+.icons-footer {
+    margin: 0 15px 0 15px;
+    color: #cccccc !important;
+}
+
+.icons-menu:hover, .icons-footer:hover {
+    color: #1ABC9C !important;
+}
+
+/* Testimonials Background */
+#testimonials-background {
+    background-image: url('http://nebula.wsimg.com/ffc0e65518a5f1c8404d6abf63beaf80?AccessKeyId=78AAC3F4F05251ED079C&disposition=0&alloworigin=1');
+    padding: 150px 0;
+    
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: color-dodge;
+}

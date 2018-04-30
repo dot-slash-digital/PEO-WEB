@@ -688,7 +688,7 @@ textarea.border-form-control {
 		margin-bottom: 0;
 	}
 
-	#primary-menu-trigger { top: 10px !important; }
+	#primary-menu-trigger { top: 25px !important; }
 
 	#side-panel-trigger {
 		margin: 25px 0 !important;

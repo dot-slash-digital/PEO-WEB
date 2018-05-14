@@ -13602,3 +13602,21 @@ body:not(.no-transition) #wrapper,
     background-color: rgba(0, 0, 0, 0.4);
     background-blend-mode: color-dodge;
 }
+
+/* Footer -- Copyright */
+@media (min-width: 960px) {
+    .copyright-text-left {
+        float: left !important;
+        text-align: left !important;
+    }
+    .copyright-text-right {
+        float: right !important;
+        text-align: right !important;
+    }
+}
+@media (max-width: 959px) {
+    .copyright-text-left, .copyright-text-right {
+        float: none !important;
+        text-align: center;
+    }
+}

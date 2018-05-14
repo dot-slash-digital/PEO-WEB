@@ -101,6 +101,8 @@
 	.side-header #logo img,
 	.side-header #primary-menu:not(.style-2),
 	.side-header #primary-menu:not(.style-2) > ul { height: auto; }
+    
+    .side-header #logo img { padding-bottom: 50px; }
 
 }
 

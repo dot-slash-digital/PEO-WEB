@@ -152,7 +152,7 @@
 
 
 @media (max-width: 991px) {
-
+    
 	#wrapper {
 		width: 100%;
 		margin: 0;
@@ -199,7 +199,11 @@
 	#header.sticky-style-2,
 	#header.sticky-style-3,
 	#header.sticky-style-2 #header-wrap,
-	#header.sticky-style-3 #header-wrap { height: auto !important; }
+	#header.sticky-style-3 #header-wrap {
+        border-bottom: 1px solid #EEE !important;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.065);
+        height: auto !important;
+    }
 
 	#header.sticky-style-2 #header-wrap,
 	#header.sticky-style-3 #header-wrap { min-height: 60px; }

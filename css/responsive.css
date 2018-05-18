@@ -1352,9 +1352,6 @@
 
 	.heading-block ~ p:not(.lead) { font-size: 15px; }
 
-	.emphasis-title h1,
-	.emphasis-title h2 { font-size: 44px !important; }
-
 	.wedding-head { font-size: 48px; }
 
 	.wedding-head .first-name,
@@ -1640,9 +1637,6 @@
 		top: 2px !important;
 		margin-left: 3px !important;
 	}
-
-	.emphasis-title h1,
-	.emphasis-title h2 { font-size: 40px !important; }
 
 	.error404,
 	.error404-wrap .error404 { font-size: 120px; }

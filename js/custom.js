@@ -124,3 +124,22 @@ if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursda
     
 } else if (day == "Sunday") // closed on Sundays
     currentlyClosed();
+
+// Set all reviews to same height
+function reviewHeight() {
+    var largestSlide = 0;
+    $(".slide").each(function() {
+        if ($(this).height() > largestSlide)
+        largestSlide = $(this).height();
+    });
+    $(".slide").each(function() {
+        $(this).height(largestSlide);
+    });
+}
+
+jQuery(document).ready(function () {
+    reviewHeight();
+});
+$(window).resize(function() {
+    reviewHeight();
+});

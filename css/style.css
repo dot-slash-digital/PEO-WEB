@@ -13576,6 +13576,15 @@ body:not(.no-transition) #wrapper,
 	*** Custom ***
 -----------------------------------------------------------------*/
 
+/* Jumbotron Background */
+
+.video-wrap {
+    background-image: url(http://nebula.wsimg.com/c8eb99b3fcb793d678e30d0ea78a7915?AccessKeyId=78AAC3F4F05251ED079C&disposition=0&alloworigin=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Icons */
 
 .icons-menu {
@@ -13599,7 +13608,7 @@ body:not(.no-transition) #wrapper,
     background-image: url('http://nebula.wsimg.com/ffc0e65518a5f1c8404d6abf63beaf80?AccessKeyId=78AAC3F4F05251ED079C&disposition=0&alloworigin=1');
     padding: 100px 0;
     
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: color-dodge;
 }
 
@@ -13631,4 +13640,74 @@ body:not(.no-transition) #wrapper,
 .hours p {
     text-align: right;
     margin: 0;
+}
+
+/* Fix Location text size */
+@media (max-width: 569px) {
+    .lead {
+        font-size: 1rem;
+    }
+}
+
+/* Reviews Text Size */
+@media (max-width: 299px) {
+    .parallax .testimonial .testi-content p {
+        font-size: 12px !important;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    .parallax .testimonial .testi-content p {
+        font-size: 15px !important;
+    }
+}
+
+@media (min-width: 400px) and (max-width: 450px) {
+    .parallax .testimonial .testi-content p {
+        font-size: 18px !important;
+    }
+}
+
+/* Eyewear Text Size */
+@media (max-width: 406px) {
+    .t300 {
+        font-size: 14px !important;
+    }
+}
+
+@media (min-width: 407px) and (max-width: 430px) {
+    .t300 {
+        font-size: 18px !important;
+    }
+}
+
+/* Jumbotron Text Size */
+@media (max-width: 339px) {
+    .emphasis-title h1 {
+        font-size: 25px !important;
+    }
+}
+
+@media (min-width: 340px) and (max-width: 409px) {
+    .emphasis-title h1 {
+        font-size: 30px !important;
+    }
+}
+
+@media (min-width: 410px) and (max-width: 499px) {
+    .emphasis-title h1 {
+        font-size: 35px !important;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 770px) {
+    .emphasis-title h1 {
+        font-size: 40px !important;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 1125px) {
+    .emphasis-title h1 {
+        font-size: 50px !important;
+    }
 }

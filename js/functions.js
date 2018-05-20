@@ -2216,8 +2216,8 @@ var SEMICOLON = SEMICOLON || {};
 							slider.parent().removeClass('preloader2');
 							var t = setTimeout( function(){ $('.grid-container').isotope('layout'); }, 1200 );
 							SEMICOLON.initialize.lightbox();
-							$('.flex-prev').html('<i class="icon-angle-left"></i>');
-							$('.flex-next').html('<i class="icon-angle-right"></i>');
+							$('.flex-prev').html('<i class="fas fa-chevron-left"></i>');
+							$('.flex-next').html('<i class="fas fa-chevron-right"></i>');
 							SEMICOLON.portfolio.portfolioDescMargin();
 						},
 						after: function(){

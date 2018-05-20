@@ -20,7 +20,7 @@
         <link rel="stylesheet" href="css/responsive.css" type="text/css" />
 
         <!-- FontAwesome CSS -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     </head>
 
     <body class="stretched side-header">
@@ -42,9 +42,10 @@
                         <!-- Menu -->
                         <nav id="primary-menu" style="padding-top: 15px">
                             <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="0">
-                                <li><a href="#" data-href="#wrapper"><div>Home</div></a></li>
+                                <li><a href="#" data-href="#slider"><div>Home</div></a></li>
                                 <li><a href="#" data-href="#section-about"><div>About</div></a></li>
                                 <li><a href="#" data-href="#section-eyewear"><div>Eyewear</div></a></li>
+                                <li><a href="#" data-href="#section-brands"><div>Brands</div></a></li>
                                 <li><a href="#" data-href="#section-reviews"><div>Reviews</div></a></li>
                                 <li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
                             </ul>
@@ -80,7 +81,7 @@
                                         <span class="t400 font-body" style="color: white;">Your face deserves our best...<br>Come "SEE" the difference!</span>
                                     </h1>
                                 </div>
-                                <a href="tel:7022581944" class="button button-border button-light button-rounded" data-scrollto="#section-works" data-easing="easeInOutExpo" data-speed="1250" data-offset="70"><i class="fas fa-phone"></i> (702) 258-1944</a>
+                                <a href="tel:7022581944" class="button button-border button-light button-rounded"><i class="fas fa-phone"></i> (702) 258-1944</a>
                             </div>
                         </div>
                         <div class="video-wrap">
@@ -104,11 +105,13 @@
                                 <!-- Hours -->
                                 <div class="col" style="margin-top: 25px">
                                     <h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px; margin-bottom: 20px !important">Hours</h2>
+                                    <p id="smart-hours" style="margin-bottom: 15px"></p>
                                     <div class="row" style="width: 250px; margin: 0 auto">
                                         <div class="col days" style="padding: 0"></div>
                                         <div class="col hours" style="padding: 0"></div>
                                     </div>
-                                    <p id="smart-hours" style="margin-top: 15px"></p>
+                                    <a href="https://www.facebook.com/personaleyeslasvegas/" class="button button-border button-rounded"data-easing="easeInOutExpo" data-speed="1250" data-offset="70" style="margin-top: 50px"><i class="far fa-thumbs-up"></i> Like us on Facebook</a>
+                                    <p>and save 10% on your next purchase!</p>
                                 </div>
 
                                 <!-- Location -->
@@ -122,7 +125,7 @@
                     </div>
 
                     <!-- Eyewear -->
-                    <div id="section-eyewear">
+                    <div id="section-eyewear" class="page-section nopadding">
                         <!-- Text 1 -->
                         <div class="section nomargin">
                             <div class="container clearfix">
@@ -134,93 +137,79 @@
                         </div>
                         
                         <!-- Portfolio -->
-                        <div id="portfolio" class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-masonry mixed-masonry clearfix">
-                            <article class="portfolio-item pf-media pf-icons wide">
-                                <div class="portfolio-image">
-                                    <a href="#">
-                                        <img src="images/portfolio/1.jpg">
-                                    </a>
+                        <div class="portfolio grid-container portfolio-nomargin portfolio-full portfolio-masonry mixed-masonry clearfix">
+                            <article class="portfolio-item wide">
+                                <div class="portfolio-image" onclick="window.location='#gucci1'">
+                                    <img src="images/portfolio/1.jpg">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
-                                            <h3><a href="#">Gucci</a></h3>
+                                            <h3>Gucci 1</h3>
                                             <span>Sunglasses</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="portfolio-item pf-illustrations">
-                                <div class="portfolio-image">
-                                    <a href="#">
-                                        <img src="images/portfolio/2.jpg">
-                                    </a>
+                            <article class="portfolio-item">
+                                <div class="portfolio-image" onclick="window.location='#oliverpeoples1'">
+                                    <img src="images/portfolio/2.jpg">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
-                                            <h3><a href="#">Oliver Peoples</a></h3>
+                                            <h3>Oliver Peoples 1</h3>
                                             <span>Opticals, Sunglasses</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="portfolio-item pf-graphics pf-uielements">
-                                <div class="portfolio-image">
-                                    <a href="#">
-                                        <img src="images/portfolio/3.jpg">
-                                    </a>
+                            <article class="portfolio-item">
+                                <div class="portfolio-image" onclick="window.location='#gucci2'">
+                                    <img src="images/portfolio/3.jpg">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
-                                            <h3><a href="#">Gucci</a></h3>
+                                            <h3>Gucci 2</h3>
                                             <span>Sunglasses</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="portfolio-item pf-media pf-icons wide">
-                                <div class="portfolio-image">
-                                    <a href="#">
-                                        <img src="images/portfolio/4.jpg">
-                                    </a>
+                            <article class="portfolio-item wide">
+                                <div class="portfolio-image" onclick="window.location='#oliverpeoples2'">
+                                    <img src="images/portfolio/4.jpg">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
-                                            <h3><a href="#">Oliver Peoples</a></h3>
+                                            <h3>Oliver Peoples 2</h3>
                                             <span>Sunglasses</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="portfolio-item pf-uielements pf-media wide">
-                                <div class="portfolio-image">
-                                    <a href="#">
-                                        <img src="images/portfolio/5.jpg">
-                                    </a>
+                            <article class="portfolio-item wide">
+                                <div class="portfolio-image" onclick="window.location='#tomford'">
+                                    <img src="images/portfolio/5.jpg">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
-                                            <h3><a href="#">Tom Ford</a></h3>
+                                            <h3>Tom Ford</h3>
                                             <span>Opticals</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="portfolio-item pf-media pf-icons">
-                                <div class="portfolio-image">
-                                    <a href="#">
-                                        <img src="images/portfolio/6.jpg">
-                                    </a>
+                            <article class="portfolio-item">
+                                <div class="portfolio-image" onclick="window.location='#gucci3'">
+                                    <img src="images/portfolio/6.jpg">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
-                                            <h3><a href="#">Gucci</a></h3>
+                                            <h3>Gucci 3</h3>
                                             <span>Sunglasses</span>
                                         </div>
                                     </div>
                                 </div>
                             </article>
-                            <article class="portfolio-item pf-uielements pf-icons">
-                                <div class="portfolio-image">
-                                    <a href="#">
-                                        <img src="images/portfolio/7.jpg">
-                                    </a>
+                            <article class="portfolio-item">
+                                <div class="portfolio-image" onclick="window.location='#dior'">
+                                    <img src="images/portfolio/7.jpg">
                                     <div class="portfolio-overlay">
                                         <div class="portfolio-desc">
-                                            <h3><a href="#">Dior</a></h3>
+                                            <h3>Dior</h3>
                                             <span>Sunglasses</span>
                                         </div>
                                     </div>
@@ -236,14 +225,14 @@
                     </div>
 
                     <!-- Brands -->
-                    <div id="section-brands" class="section nomargin">
+                    <div id="section-brands" class="page-section section nomargin">
                         <div class="container clearfix">
                             <div class="divcenter center" style="max-width: 900px;">
                                 <h2 class="nobottommargin t300 ls1">Since 1979, Personal Eyes Opticians has provided Las Vegas with unique, fashion-forward eyewear for the whole family.</h2>
                             </div>
                         </div>
 
-                        <div class="container topmargin-lg clearfix">
+                        <div class="container topmargin-sm clearfix">
                             <div id="oc-clients" class="owl-carousel topmargin image-carousel carousel-widget" data-margin="80" data-loop="true" data-nav="false" data-autoplay="5000" data-pagi="false"data-items-xs="2" data-items-sm="3" data-items-md="4" data-items-lg="5" data-items-xl="6">
                                 <div class="oc-item"><img src="images/clients/brand-logo-01.png"></div>
                                 <div class="oc-item"><img src="images/clients/brand-logo-02.png"></div>
@@ -271,7 +260,16 @@
                                     <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
                                         <div class="flexslider">
                                             <div class="slider-wrap">
-                                                <div class="slide">
+                                                <div class="slide slide-testimonial">
+                                                    <div class="testi-content">
+                                                        <p>I am constantly being complimented on my eyewear--Nancy ALWAYS knows what frame is best for my face. The frame I pick is usually the first one she puts on me. Nancy always makes it fun to get new glasses!</p>
+                                                        <div class="testi-meta">
+                                                            Robin W.
+                                                            <span>Facebook</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="slide slide-testimonial">
                                                     <div class="testi-content">
                                                         <p>Nancy, the owner, is the best!!! She definitely understands what great customer service is!! She always goes above and beyond. My family has been going to her for over 20 years!!!</p>
                                                         <div class="testi-meta">
@@ -280,21 +278,12 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="slide">
+                                                <div class="slide slide-testimonial">
                                                     <div class="testi-content">
                                                         <p>Nancy Edwards provides the personalized service that is rare these days. The store is beautifully decorated, spotless and stocked with the most current frames.</p>
                                                         <div class="testi-meta">
                                                             Mark W.
                                                             <span>Google Reviews</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="slide">
-                                                    <div class="testi-content">
-                                                        <p>I am constantly being complimented on my eyewear--Nancy ALWAYS knows what frame is best for my face. The frame I pick is usually the first one she puts on me. Nancy always makes it fun to get new glasses!</p>
-                                                        <div class="testi-meta">
-                                                            Robin W.
-                                                            <span>Facebook</span>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -314,21 +303,21 @@
                                     <h2 class="divcenter bottommargin font-body center" style="max-width: 700px; font-size: 40px;">Contact Us</h2>
                                     <form id="contact-form" class="nobottommargin" action="https://formspree.io/matthew.bierman2@gmail.com" method="POST">
                                         <div class="col_half">
-                                            <input id="contact-name-input" class="sm-form-control border-form-control required" type="text" name="Name" placeholder="Name" />
+                                            <input id="contact-name-input" class="sm-form-control border-form-control required" type="text" name="Name" placeholder="Name *" />
                                         </div>
                                         <div class="col_half col_last">
-                                            <input id="contact-email-input" class="email sm-form-control border-form-control required" type="email" name="_replyto" placeholder="Email Address" />
+                                            <input id="contact-email-input" class="email sm-form-control border-form-control required" type="email" name="_replyto" placeholder="Email Address *" />
                                         </div>
                                         <div class="clear"></div>
                                         <div class="col_one_third">
-                                            <input id="contact-phonenumber-input" class="sm-form-control border-form-control" type="text" name="Phone Number" value="" placeholder="Phone" />
+                                            <input id="contact-phonenumber-input" class="sm-form-control border-form-control" type="text" name="Phone Number" value="" placeholder="Phone Number" />
                                         </div>
                                         <div class="col_two_third col_last">
                                             <input id="contact-subject-input" class="sm-form-control border-form-control" type="text" name="Subject" placeholder="Subject" />
                                         </div>
                                         <div class="clear"></div>
                                         <div class="col_full">
-                                            <textarea id="contact-message-input" class="sm-form-control border-form-control required" name="Message" placeholder="Your Message" style="height: 150px !important"></textarea>
+                                            <textarea id="contact-message-input" class="sm-form-control border-form-control required" name="Message" placeholder="Your Message *" style="height: 150px !important"></textarea>
                                         </div>
                                         <div class="col_full center">
                                             <button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" value="submit">Send Message</button>
@@ -397,6 +386,323 @@
                     </div>
                 </div>
             </footer>
+        </div>
+        
+        <!-- Modals -->
+        <div id="gucci1" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>Gucci 1</h1>
+                <div>
+                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <img src="images/portfolio/1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/4.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px">
+                    <a href="#interest" class="button button-border button-rounded"><i class="fas fa-glasses"></i> I'm interested!</a>
+                </div>
+            </div>
+        </div>
+        <div id="gucci2" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>Gucci 2</h1>
+                <div>
+                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <img src="images/portfolio/1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/4.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px">
+                    <a href="#interest" class="button button-border button-rounded"><i class="fas fa-glasses"></i> I'm interested!</a>
+                </div>
+            </div>
+        </div>
+        <div id="gucci3" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>Gucci 3</h1>
+                <div>
+                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <img src="images/portfolio/1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/4.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px">
+                    <a href="#interest" class="button button-border button-rounded"><i class="fas fa-glasses"></i> I'm interested!</a>
+                </div>
+            </div>
+        </div>
+        <div id="oliverpeoples1" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>Oliver Peoples 1</h1>
+                <div>
+                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <img src="images/portfolio/1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/4.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px">
+                    <a href="#interest" class="button button-border button-rounded"><i class="fas fa-glasses"></i> I'm interested!</a>
+                </div>
+            </div>
+        </div>
+        <div id="oliverpeoples2" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>Oliver Peoples 2</h1>
+                <div>
+                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <img src="images/portfolio/1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/4.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px">
+                    <a href="#interest" class="button button-border button-rounded"><i class="fas fa-glasses"></i> I'm interested!</a>
+                </div>
+            </div>
+        </div>
+        <div id="tomford" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>Tom Ford</h1>
+                <div>
+                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <img src="images/portfolio/1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/4.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px">
+                    <a href="#interest" class="button button-border button-rounded"><i class="fas fa-glasses"></i> I'm interested!</a>
+                </div>
+            </div>
+        </div>
+        <div id="dior" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>Dior</h1>
+                <div>
+                    <div class="fslider testimonial testimonial-full nobgcolor noborder noshadow nopadding" data-arrows="false">
+                        <div class="flexslider">
+                            <div class="slider-wrap">
+                                <div class="slide">
+                                    <img src="images/portfolio/1.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/2.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/3.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/4.jpg">
+                                </div>
+                                <div class="slide">
+                                    <img src="images/portfolio/5.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="text-align: center; margin-top: 32px">
+                    <a href="#interest" class="button button-border button-rounded"><i class="fas fa-glasses"></i> I'm interested!</a>
+                </div>
+            </div>
+        </div>
+        <div id="interest" class="modal-window" onclick="window.location='#home'">
+            <div onclick="event.stopPropagation()">
+                <a class="modal-close" href="#home"><i class="fas fa-2x fa-times"></i></a>
+                <h1>I'm Interested!</h1>
+                <div>
+                    <form id="interest-form" class="nobottommargin" action="https://formspree.io/matthew.bierman2@gmail.com" method="POST">
+                        <div class="col_full">
+                            <input id="interest-name-input" class="sm-form-control border-form-control required" type="text" name="Name" placeholder="Full Name *" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_half">
+                            <input id="interest-email-input" class="email sm-form-control border-form-control required" type="email" name="_replyto" placeholder="Email Address *" />
+                            
+                        </div>
+                        <div class="col_half col_last">
+                            <input id="interest-phonenumber-input" class="sm-form-control border-form-control" type="text" name="Phone Number" value="" placeholder="Phone Number" />
+                        </div>
+                        <div class="clear"></div>
+                        <div class="col_one_third col_last" style="margin-bottom: 0 !important; width: 33.33% !important; float: left !important">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox1" value="Anne & Valentin">
+                                <label for="checkbox1">Anne &amp; Valentin</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox4" value="Fendi">
+                                <label for="checkbox4">Fendi</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox7" value="Lafont">
+                                <label for="checkbox7">Lafont</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox10" value="Oliver Peoples">
+                                <label for="checkbox10">Oliver Peoples</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox13" value="Tom Ford">
+                                <label for="checkbox13">Tom Ford</label>
+                            </div>
+                        </div>
+                        <div class="col_one_third col_last" style="margin-bottom: 0 !important; width: 33.33% !important; float: left !important">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox2" value="Bvlgari">
+                                <label for="checkbox2">Bvlgari</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox5" value="Fysh">
+                                <label for="checkbox5">Fysh</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox8" value="Marc Jacobs">
+                                <label for="checkbox8">Marc Jacobs</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox11" value="Ray-Ban">
+                                <label for="checkbox11">Ray-Ban</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox14" value="Wiley X">
+                                <label for="checkbox14">Wiley X</label>
+                            </div>
+                        </div>
+                        <div class="col_one_third col_last" style="margin-bottom: 0 !important; width: 33.33% !important; float: left !important">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox3" value="Dior">
+                                <label for="checkbox3">Dior</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox6" value="Gucci">
+                                <label for="checkbox6">Gucci</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox9" value="Oakley">
+                                <label for="checkbox9">Oakley</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="checkbox12" value="Silhouette">
+                                <label for="checkbox12">Silhouette</label>
+                            </div>
+                        </div>
+                        <div class="clear" style="height: 15px"></div>
+                        <div class="col_full" style="margin-bottom: 0 !important">
+                            <textarea id="interest-comments-input" class="sm-form-control border-form-control required" name="Additional Notes/Comments" placeholder="Additional Notes/Comments" style="height: 100px !important"></textarea>
+                        </div>
+                        <div class="col_full center">
+                            <button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" value="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
 
         <!-- Go To Top -->

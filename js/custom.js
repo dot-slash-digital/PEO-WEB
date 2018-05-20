@@ -44,6 +44,50 @@ jQuery(document).ready(function ($) {
     });
 });
 
+// Interest Form
+jQuery(document).ready(function ($) {
+    $("#interest-form").submit(function() {
+        if ($("#interest-name-input").val() == "") {
+            $("#interest-name-input").removeClass("success");
+            $("#interest-name-input").addClass("error");
+        } else {
+            $("#interest-name-input").removeClass("error");
+            $("#interest-name-input").addClass("success");
+        }
+
+        if ($("#interest-email-input").val() == "") {
+            $("#interest-email-input").removeClass("success");
+            $("#interest-email-input").addClass("error");
+        } else {
+            $("#interest-email-input").removeClass("error");
+            $("#interest-email-input").addClass("success");
+        }
+        
+        if ($("#interest-phonenumber-input").val() == "") {
+            $("#interest-phonenumber-input").removeClass("success");
+        } else {
+            $("#interest-phonenumber-input").addClass("success");
+        }
+        
+        if ($("#interest-subject-input").val() == "") {
+            $("#interest-subject-input").removeClass("success");
+        } else {
+            $("#interest-subject-input").addClass("success");
+        }
+
+        if ($("#interest-comments-input").val() == "") {
+            $("#interest-comments-input").removeClass("success");
+        } else {
+            $("#interest-comments-input").addClass("success");
+        }
+
+        if ($("#interest-name-input").val() != "" && $("#interest-email-input").val() != "")
+            return true;
+        else
+            return false;
+    });
+});
+
 // Bolds the current day and its corresponding open hours in the 'Locations' section
 var currentDate = new Date();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
@@ -62,17 +106,14 @@ function currentlyClosed() {
     $("#smart-hours").html("Currently Closed");
     $("#smart-hours").css({"color": "#a94442", "font-weight": "bold"});
 }
-
 function closingSoon(s) {
     $("#smart-hours").html("Closing " + s);
     $("#smart-hours").css({"color": "#af8103", "font-weight": "bold"});
 }
-
 function currentlyOpen() {
     $("#smart-hours").html("Currently Open");
     $("#smart-hours").css({"color": "#00a803", "font-weight": "bold"});
 }
-
 function openingSoon(s) {
     $("#smart-hours").html("Opening " + s);
     $("#smart-hours").css({"color": "#9daa03", "font-weight": "bold"});
@@ -128,11 +169,11 @@ if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursda
 // Set all reviews to same height
 function reviewHeight() {
     var largestSlide = 0;
-    $(".slide").each(function() {
+    $(".slide-testimonial").each(function() {
         if ($(this).height() > largestSlide)
         largestSlide = $(this).height();
     });
-    $(".slide").each(function() {
+    $(".slide-testimonial").each(function() {
         $(this).height(largestSlide);
     });
 }

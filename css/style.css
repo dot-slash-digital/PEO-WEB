@@ -681,7 +681,7 @@ body.stretched .container-fullwidth {
 	display: block;
 	width: 100%;
 	height: auto;
-	overflow: hidden;
+	/* overflow: hidden; */
 	-webkit-backface-visibility: hidden;
 }
 
@@ -9740,7 +9740,7 @@ body:not(.device-touch) .clients-grid li a {
 	width: 6px !important;
 	height: 6px !important;
 	border: none;
-	background-color: #1ABC9C;
+	background-color: #000;
 	opacity: 0.5;
 }
 
@@ -13612,7 +13612,7 @@ body:not(.no-transition) #wrapper,
     background-blend-mode: color-dodge;
 }
 
-/* Footer -- Copyright */
+/* Footer - Copyright */
 @media (min-width: 960px) {
     .copyright-text-left {
         float: left !important;
@@ -13710,4 +13710,95 @@ body:not(.no-transition) #wrapper,
     .emphasis-title h1 {
         font-size: 50px !important;
     }
+}
+
+.modal-window {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-window:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal-window > div {
+    position: relative;
+    padding: 2rem;
+    background: #fff;
+    color: #444;
+}
+
+@media (max-width: 450px) {
+    .modal-window > div { width: 95%; }
+}
+
+@media (min-width: 451px) and (max-width: 600px) {
+    .modal-window > div { width: 80%; }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+    .modal-window > div { width: 60%; }
+}
+
+@media (min-width: 1201px) {
+    .modal-window > div { width: 40%; }
+}
+
+.modal-window header {
+    font-weight: bold;
+}
+
+.modal-close {
+    color: #aaa;
+    font-size: 80%;
+    float: right;
+    text-decoration: none;
+}
+
+.modal-close:hover {
+    color: #000;
+}
+
+.modal-window h1 {
+    font-size: 150%;
+    margin: 0 0 15px;
+}
+
+.portfolio-overlay .portfolio-desc h3 {
+    color: #000 !important;
+}
+
+.portfolio-item .portfolio-image {
+    cursor: pointer;
+}
+
+#interest-form .col_one_third .form-check label {
+    font-weight: 400 !important;
+}
+
+@media (max-width: 850px) {
+    #interest > div { width: 95% !important; }
+}
+
+@media (min-width: 851px) and (max-width: 900px) {
+    #interest > div { width: 80%; }
+}
+
+@media (min-width: 901px) {
+    #interest > div { width: 75%; }
 }

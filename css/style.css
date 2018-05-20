@@ -13791,6 +13791,12 @@ body:not(.no-transition) #wrapper,
     font-weight: 400 !important;
 }
 
+#interest-form .col_one_third {
+    margin-bottom: 0 !important;
+    width: 33.33% !important;
+    float: left !important;
+}
+
 @media (max-width: 850px) {
     #interest > div { width: 95% !important; }
 }
@@ -13801,4 +13807,28 @@ body:not(.no-transition) #wrapper,
 
 @media (min-width: 901px) {
     #interest > div { width: 75%; }
+}
+
+@media (min-width: 488px) {
+    #interest-comments-input {
+        margin-top: 15px;
+        height: 100px !important;
+    }
+}
+
+@media (max-width: 487px) {
+    #interest-form .col_full { margin-bottom: 5px !important; }
+    
+    #interest-form .col_half { margin-bottom: 5px !important; }
+    
+    #interest-form .col_one_third { margin-top: 10px !important; }
+    
+    #interest-form div .border-form-control {
+        height: 36px !important;
+        font-size: 15px !important;
+    }
+    
+    #interest-comments-input { margin-top: 5px; }
+    
+    #interest-form div div label { font-size: 10px; }
 }

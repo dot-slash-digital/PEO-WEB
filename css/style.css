@@ -13580,7 +13580,7 @@ body:not(.no-transition) #wrapper,
 
 .video-wrap {
     /* background-image: url(http://nebula.wsimg.com/c8eb99b3fcb793d678e30d0ea78a7915?AccessKeyId=78AAC3F4F05251ED079C&disposition=0&alloworigin=1); */
-    background-image: url(../images/DSC03021.jpg);
+    background-image: url(../images/background_01.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -13607,9 +13607,9 @@ body:not(.no-transition) #wrapper,
 /* Testimonials Background */
 #testimonials-background {
     /* background-image: url(http://nebula.wsimg.com/ffc0e65518a5f1c8404d6abf63beaf80?AccessKeyId=78AAC3F4F05251ED079C&disposition=0&alloworigin=1); */
-    background-image: url(../images/DSC02917.jpg);
+    background-image: url(../images/background_02.jpg);
     
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     background-blend-mode: color-dodge;
 }
 

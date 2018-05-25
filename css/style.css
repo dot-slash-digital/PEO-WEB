@@ -13832,3 +13832,7 @@ body:not(.no-transition) #wrapper,
     
     #interest-form div div label { font-size: 10px; }
 }
+
+#section-eyewear div span a:hover {
+    color: #999999 !important;
+}

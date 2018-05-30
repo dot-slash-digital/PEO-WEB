@@ -171,7 +171,7 @@ function reviewHeight() {
     var largestSlide = 0;
     $(".slide-testimonial").each(function() {
         if ($(this).height() > largestSlide)
-        largestSlide = $(this).height();
+            largestSlide = $(this).height();
     });
     $(".slide-testimonial").each(function() {
         $(this).height(largestSlide);
@@ -183,4 +183,14 @@ jQuery(document).ready(function () {
 });
 $(window).resize(function() {
     reviewHeight();
+});
+
+// Set heights for brand logos
+jQuery(document).ready(function() {
+    $(".owl-item").each(function() {
+        if ($(this).height() < $(".owl-stage-outer").height()) {
+            $(this).css({"margin-top": (($(".owl-stage-outer").height() - $(this).height()) / 2)});
+            $(this).css({"margin-bottom": (($(".owl-stage-outer").height() - $(this).height()) / 2)});
+        }
+    });
 });

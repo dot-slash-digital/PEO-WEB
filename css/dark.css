@@ -1022,14 +1022,14 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 #footer.dark,
 .dark #footer {
-	background-color: #333;
-	color: #CCC;
+	background-color: #717171;
+	color: #fff;
 	border-top-color: rgba(0,0,0,0.2);
 }
 
 .dark #copyrights {
 	background-color: rgba(0,0,0,0.2);
-	color: rgba(255,255,255,0.25);
+	color: rgba(255,255,255,0.75);
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
 }
 
@@ -1060,7 +1060,7 @@ body #side-panel.dark #side-panel-trigger-close a {
 	color: #FFF;
 }
 
-.dark .widget h4 { color: #DDD; }
+.dark .widget h4 { color: #fff; }
 
 .dark .widget p { opacity: 0.8; }
 

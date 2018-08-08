@@ -168,19 +168,19 @@ if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursda
 
 // Set all reviews to same height
 function reviewHeight() {
-    var largestSlide = 0;
+    var tallestSlide = -1;
     $(".slide-testimonial").each(function() {
-        if ($(this).height() > largestSlide)
-            largestSlide = $(this).height();
+        $(this).height("auto");
+        console.log($(this).height());
+        if ($(this).height() > tallestSlide)
+            tallestSlide = $(this).height();
     });
+    
     $(".slide-testimonial").each(function() {
-        $(this).height(largestSlide);
+        $(this).height(tallestSlide);
     });
 }
-
-jQuery(document).ready(function () {
-    reviewHeight();
-});
+$(reviewHeight());
 $(window).resize(function() {
     reviewHeight();
 });

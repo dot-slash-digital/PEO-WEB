@@ -124,7 +124,9 @@ var hour = currentDate.getHours();
 var minute = currentDate.getMinutes();
 var day = days[currentDate.getDay()];
 
-if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursday" || day == "Friday") {
+if (currentDate.getMonth() == 8 && currentDate.getDate() == 3 && currentDate.getFullYear() == 2018) {
+    currentlyClosed();
+} else if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursday" || day == "Friday") {
     if ( hour < 6 || hour > 17 || (hour == 17 && minute > 30) ) // 12:00am - 5:59am, 5:31pm - 11:59pm
         currentlyClosed();
     else if ( (hour >= 6 && hour < 8) || (hour == 8 && minute == 0) ) // 6:00am - 8:00am

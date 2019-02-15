@@ -173,7 +173,6 @@ function reviewHeight() {
     var tallestSlide = -1;
     $(".slide-testimonial").each(function() {
         $(this).height("auto");
-        console.log($(this).height());
         if ($(this).height() > tallestSlide)
             tallestSlide = $(this).height();
     });

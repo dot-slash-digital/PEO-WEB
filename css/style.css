@@ -9,6 +9,81 @@
 
 -----------------------------------------------------------------------------------*/
 
+#portfolio {
+    width: 100%;
+    max-width: 900px;
+    padding-top: 60px;
+    margin: 0 auto;
+}
+
+.p-item {
+    height: 0;
+    float: left;
+}
+
+.p-item img {
+    width: 100%;
+    padding-top: 15px;
+}
+
+.p-item-title, .p-item-text {
+    margin: 0;
+}
+
+.p-item img, .p-item-title, .p-item-text {
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align: center;
+}
+
+.p-item-title {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1 !important;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.p-item-text {
+    font-family: 'Source Sans Pro', sans-serif !important;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 1 !important;
+}
+
+/* Extra Small Device Size */
+@media (max-width: 400px) {
+    .p-item {
+        width: 100%;
+        padding-bottom: calc(100% + 75px);
+    }
+}
+
+/* Small Device Size */
+@media (min-width: 401px) and (max-width: 550px) {
+    .p-item {
+        width: 50%;
+        padding-bottom: calc(50% + 75px);
+    }
+}
+
+/* Medium Device Size */
+@media (min-width: 551px) and (max-width: 800px) {
+    .p-item {
+        width: 33.333%;
+        padding-bottom: calc(33.333% + 75px);
+    }
+}
+
+/* Large Device Size */
+@media (min-width: 801px) and (max-width: 2000px) {
+    .p-item {
+        width: 25%;
+        padding-bottom: calc(25% + 75px);
+    }
+}
+
 /* ----------------------------------------------------------------
 
 	- Basic
@@ -13780,10 +13855,6 @@ body:not(.no-transition) #wrapper,
 
 .portfolio-overlay .portfolio-desc h3 {
     color: #000 !important;
-}
-
-.portfolio-item .portfolio-image {
-    cursor: pointer;
 }
 
 #interest-form .col_one_third .form-check label {

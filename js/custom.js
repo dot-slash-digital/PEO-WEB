@@ -198,4 +198,7 @@ jQuery(document).ready(function() {
 
 $("#email-banner-close i").click(function() {
     $("#email-banner").css("display", "none");
+    $("#footer").css("margin-bottom", 0);
 });
+
+$("#footer").css("margin-bottom", $("#email-banner").height());

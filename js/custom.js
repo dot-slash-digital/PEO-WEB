@@ -195,3 +195,7 @@ jQuery(document).ready(function() {
         }
     });
 });
+
+$("#email-banner-close i").click(function() {
+    $("#email-banner").css("display", "none");
+});

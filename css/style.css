@@ -13906,3 +13906,149 @@ body:not(.no-transition) #wrapper,
 #section-eyewear div span a:hover {
     color: #999999 !important;
 }
+
+#email-banner {
+    border-top: 1px solid #EEE;
+    position: fixed;
+    bottom: 0;
+    background-color: white;
+    z-index: 299;
+    padding: 0 30px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.065);
+}
+
+#email-banner > div {
+    display: flex;
+    justify-content: center;
+}
+
+#email-banner > div > div:nth-child(1) {
+    margin-right: 25px;
+}
+
+#email-banner-close {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 50px;
+}
+
+#email-banner > div > div:nth-child(2) {
+    display: flex;
+    height: 38px;
+    margin: 16px 0;
+}
+
+#email-banner button {
+    color: white;
+    background-color: #1ABC9C;
+}
+
+#email-banner button:hover {
+    background-color: #1aa58a;
+}
+
+#email-banner-close span {
+    line-height: 71px;
+    font-size: 18px;
+}
+
+#email-banner-close i {
+    cursor: pointer;
+}
+
+@media (min-width: 992px) {
+    #email-banner {
+        width: calc(100vw - 260px);
+        margin-left: 260px;
+    }
+    
+    #email-banner > div > div:nth-child(1) > span {
+        line-height: 71px;
+        font-size: 1.15rem;
+    }
+}
+
+@media (max-width: 991px) {
+    #email-banner {
+        width: 100%;
+    }
+    
+    #email-banner > div > div:nth-child(1) > span {
+        font-size: 1rem;
+    }
+}
+    
+@media (min-width: 650px) and (max-width: 991px) {    
+    #email-banner > div > div:nth-child(1) > span {
+        line-height: 71px;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 685px) {
+    #email-banner-close {
+        margin-right: 25px;
+    }
+}
+
+@media (min-width: 490px) and (max-width: 649px) {
+    #email-banner > div > div:nth-child(1) {
+        padding: 11px 0;
+        margin-right: 50px;
+    }
+    
+    #email-banner > div > div:nth-child(2) {
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 489px) {
+    #email-banner > div > div:nth-child(1) {
+        padding: 11px 0;
+        margin-right: 15px;
+    }
+    
+    #email-banner > div > div:nth-child(2) {
+        margin-right: 45px;
+    }
+    
+    #email-banner-close {
+        margin-right: 25px;
+    }
+}
+
+@media (max-width: 450px) {
+    #email-banner {
+        padding-left: 15px;
+    }
+    
+    #email-banner > div > div:nth-child(2) {
+        margin-right: 25px;
+    }
+    
+    #email-banner-close {
+        margin-right: 15px;
+    }
+}
+
+@media (max-width: 412px) {
+    #email-banner > div > div:nth-child(2) {
+        margin-top: 28px;
+        margin-bottom: 28px;
+    }
+    
+    #email-banner-close span {
+        line-height: 94px;
+    }
+}
+
+@media (max-width: 355px) {
+    #email-banner > div > div:nth-child(1) {
+        padding: 15px 0;
+    }
+    
+    #email-banner > div > div:nth-child(1) > span {
+        font-size: 0.78rem;
+    }
+}

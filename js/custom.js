@@ -91,7 +91,7 @@ jQuery(document).ready(function ($) {
 // Bolds the current day and its corresponding open hours in the 'Locations' section
 var currentDate = new Date();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var hours = ["Closed", "Closed", "Closed", "Closed", "Closed", "Closed", "Closed"];
+var hours = ["Closed", "9:30am - 5:30pm", "9:30am - 5:30pm", "9:30am - 5:30pm", "9:30am - 5:30pm", "9:30am - 5:30pm", "10:00am - 2:00pm"];
 for (var i = 0; i <= 6; i++) {
     if (currentDate.getDay() == i) {
         $(".days").append("<p><strong>" + days[i] + "</strong></p>");
@@ -103,7 +103,7 @@ for (var i = 0; i <= 6; i++) {
 }
 
 function currentlyClosed() {
-    $("#smart-hours").html("Closed until April 1st (due to COVID-19 mandate)");
+    $("#smart-hours").html("Currently Closed");
     $("#smart-hours").css({"color": "#a94442", "font-weight": "bold"});
 }
 function closingSoon(s) {
@@ -124,8 +124,9 @@ var hour = currentDate.getHours();
 var minute = currentDate.getMinutes();
 var day = days[currentDate.getDay()];
 
-if (currentDate.getMonth() == 3 && currentDate.getDate() <= 31 && currentDate.getFullYear() == 2020) {
-    currentlyClosed();
+if (currentDate.getMonth() == 2 && currentDate.getDate() <= 31 && currentDate.getFullYear() == 2020) {
+    $("#smart-hours").html("Closed until April 1st (due to COVID-19 mandate),<br /> by appointment only");
+    $("#smart-hours").css({"color": "#a94442", "font-weight": "bold"});
 } else if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursday" || day == "Friday") {
     if ( hour < 6 || hour > 17 || (hour == 17 && minute > 30) ) // 12:00am - 5:59am, 5:31pm - 11:59pm
         currentlyClosed();

@@ -91,7 +91,7 @@ jQuery(document).ready(function ($) {
 // Bolds the current day and its corresponding open hours in the 'Locations' section
 var currentDate = new Date();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var hours = ["Closed", "9:30am - 5:30pm", "9:30am - 5:30pm", "9:30am - 5:30pm", "9:30am - 5:30pm", "9:30am - 5:30pm", "10:00am - 2:00pm"];
+var hours = ["Closed", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 2:00pm"];
 for (var i = 0; i <= 6; i++) {
     if (currentDate.getDay() == i) {
         $(".days").append("<p><strong>" + days[i] + "</strong></p>");

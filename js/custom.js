@@ -91,7 +91,7 @@ jQuery(document).ready(function ($) {
 // Bolds the current day and its corresponding open hours in the 'Locations' section
 var currentDate = new Date();
 var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-var hours = ["Closed", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 3:00pm", "10:00am - 2:00pm"];
+var hours = ["Closed", "10:00am - 4:00pm", "10:00am - 4:00pm", "10:00am - 4:00pm", "10:00am - 4:00pm", "10:00am - 4:00pm", "10:00am - 2:00pm"];
 for (var i = 0; i <= 6; i++) {
     if (currentDate.getDay() == i) {
         $(".days").append("<p><strong>" + days[i] + "</strong></p>");
@@ -128,44 +128,23 @@ if (currentDate.getMonth() == 2 && currentDate.getDate() <= 31 && currentDate.ge
     $("#smart-hours").html("Closed until April 1st (due to COVID-19 mandate),<br /> by appointment only");
     $("#smart-hours").css({"color": "#a94442", "font-weight": "bold"});
 } else if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursday" || day == "Friday") {
-    if ( hour < 6 || hour > 17 || (hour == 17 && minute > 30) ) // 12:00am - 5:59am, 5:31pm - 11:59pm
+    if (hour <= 8 || (hour == 16 && minute >= 1) || hour >= 17) // 12:00am - 8:59am, 4:01pm - 11:59pm
         currentlyClosed();
-    else if ( (hour >= 6 && hour < 8) || (hour == 8 && minute == 0) ) // 6:00am - 8:00am
-        openingSoon(" in " + Math.round(9.5 - hour - (minute / 60)) + " hours");
-    else if ( hour == 8 || (hour == 9 && minute < 30) ) // 8:01am - 9:29am
+    else if (hour == 9) // 9:00am - 9:59am
         openingSoon("Soon");
-    else if ( (hour == 9 && minute >= 30) || (hour >= 10 && hour <= 15) || (hour == 16 && minute < 30) ) // 9:30am - 4:29pm
+    else if ((hour >= 10 && hour <= 14)) // 10:00am - 2:59pm
         currentlyOpen();
-    else if (hour == 16 && minute == 30) // 4:30pm
-        closingSoon("in 1 hour");
-    else if (hour == 16 && minute >= 30) // 4:31pm - 4:59pm
-        closingSoon("in " + (90 - minute) + " minutes");
-    else if (hour == 17 && minute < 29) // 5:00pm - 5:28pm
-        closingSoon("in " + (30 - minute) + " minutes");
-    else if (hour == 17 && minute == 29) // 5:29pm
-        closingSoon("in 1 minute");
-    else if (hour == 17 && minute == 30) // 5:30pm
-        closingSoon("Now");
+    else if (hour == 15 || (hour == 16 && minute == 0)) // 3:00pm - 4:00pm
+        closingSoon("Soon");
 } else if (day == "Saturday") {
-    if (hour < 6 || hour > 14 || (hour == 14 && minute >= 1)) // 12:00am - 5:59am, 2:01pm - 11:59pm
+    if (hour <= 8 || (hour == 14 && minute >= 1) || hour >= 15) // 12:00am - 8:59am, 2:01pm - 11:59pm
         currentlyClosed();
-    else if (hour == 6 || hour == 7 || (hour == 8 && minute <= 29)) // 6:00am - 8:29am
-        openingSoon("in " + Math.round(10 - hour - (minute / 60)) + " hours");
-    else if ( (hour == 8 && minute >= 30) || (hour == 9 && minute == 0) ) // 8:30am - 9:00am
-        openingSoon("in 1 hour");
-    else if (hour == 9) // 9:01am - 9:59am
+    else if (hour == 9) // 9:00am - 9:59am
         openingSoon("Soon");
-    else if (hour >= 10 && hour <= 12 ) // 10:00am - 12:59pm
+    else if ((hour >= 10 && hour <= 12)) // 10:00am - 12:59pm
         currentlyOpen();
-    else if (hour == 13 && minute == 0) // 1:00pm
-        closingSoon("in 1 hour");
-    else if (hour == 13 && (minute >= 1 && minute <= 58)) // 1:01pm - 1:58pm
-        closingSoon("in " + (60 - minute) + " minutes");
-    else if (hour == 13 && minute == 59) // 1:59pm
-        closingSoon("in 1 minute");
-    else if (hour == 14 && minute == 0) // 2:00pm
-        closingSoon("Now");
-    
+    else if (hour == 13 || (hour == 14 && minute == 0)) // 1:00pm - 2:00pm
+        closingSoon("Soon");
 } else if (day == "Sunday") // closed on Sundays
     currentlyClosed();
 

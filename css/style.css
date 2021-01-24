@@ -13652,8 +13652,9 @@ body:not(.no-transition) #wrapper,
 #testimonials-background {
     background-image: url(../images/background_02.jpg);
 
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.55);
     background-blend-mode: color-dodge;
+    background-position: left center;
 }
 
 /* Footer - Copyright */
@@ -14020,5 +14021,64 @@ body:not(.no-transition) #wrapper,
 
     #email-banner > div > div:nth-child(1) > span {
         font-size: 0.78rem;
+    }
+}
+
+#testimonials-background {
+    position: relative;
+    height: 400px;
+}
+
+#testimonials-container {
+    height: 320px;
+    width: 50%;
+    margin: 40px;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.testimonial {
+    position: absolute;
+    transition: 0.3s all;
+}
+
+.testimonial:nth-child(2) {
+    transform: translateX(100%);
+}
+
+.testimonial:nth-child(3) {
+    transform: translateX(200%);
+}
+
+.testimonial .message {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.testimonial .source {
+    color: gray;
+}
+
+@media (max-width: 880px) {
+    #testimonials-container {
+        width: calc(100% - 80px);
+    }
+}
+
+@media (max-width: 500px) {
+    #testimonials-background {
+        height: 400px;
+    }
+
+    #testimonials-container {
+        height: 320px;
+    }
+
+    .testimonial .message {
+        font-size: 16px !important;
     }
 }

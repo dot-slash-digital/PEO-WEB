@@ -182,3 +182,45 @@ $("#email-banner-close i").click(function() {
 });
 
 $("#footer").css("margin-bottom", $("#email-banner").height());
+
+jQuery(document).ready(function ($) {
+    $("#testimonials-container .testimonial").each(function() {
+        marginHeight = ($("#testimonials-container").height() - $(this).height() - 42) / 2;
+        $(this).css({"margin-top": marginHeight, "margin-bottom": marginHeight});
+    });
+
+    var currentSlide = 1;
+    var inReverse = false;
+    function rotate() {
+        if (currentSlide === 1) {
+            $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(0)"});
+            $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(100%)"});
+            $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(200%)"});
+        } else if (currentSlide === 2) {
+            $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(-100%)"});
+            $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(0)"});
+            $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(100%)"});
+        } else if (currentSlide === 3) {
+            $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(-200%)"});
+            $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(-100%)"});
+            $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(0)"});
+        }
+
+        if (inReverse) {
+            currentSlide -= 1;
+            if (currentSlide === 0) {
+                currentSlide = 1;
+                inReverse = false;
+            }
+        } else {
+            currentSlide += 1;
+            if (currentSlide === 4) {
+                currentSlide = 2;
+                inReverse = true;
+            }
+        }
+    }
+
+    setInterval(rotate, 10000);
+    rotate();
+});

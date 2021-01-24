@@ -832,7 +832,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 .dark .testimonials-grid li:after { border-bottom-color: rgba(255,255,255,0.15); }
 
 .dark .testimonial {
-	background-color: rgba(0,0,0,0.2);
+	background-color: rgba(0,0,0,0.5);
 	border: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
 }
@@ -1684,4 +1684,3 @@ body #side-panel.dark #side-panel-trigger-close a {
 	.dark .pricing-box.pricing-extended .pricing-action-area { border-top-color: rgba(255,255,255,0.15); }
 
 }
-

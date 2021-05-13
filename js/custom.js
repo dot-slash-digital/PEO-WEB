@@ -16,13 +16,13 @@ jQuery(document).ready(function ($) {
             $("#contact-email-input").removeClass("error");
             $("#contact-email-input").addClass("success");
         }
-        
+
         if ($("#contact-phonenumber-input").val() == "") {
             $("#contact-phonenumber-input").removeClass("success");
         } else {
             $("#contact-phonenumber-input").addClass("success");
         }
-        
+
         if ($("#contact-subject-input").val() == "") {
             $("#contact-subject-input").removeClass("success");
         } else {
@@ -62,13 +62,13 @@ jQuery(document).ready(function ($) {
             $("#interest-email-input").removeClass("error");
             $("#interest-email-input").addClass("success");
         }
-        
+
         if ($("#interest-phonenumber-input").val() == "") {
             $("#interest-phonenumber-input").removeClass("success");
         } else {
             $("#interest-phonenumber-input").addClass("success");
         }
-        
+
         if ($("#interest-subject-input").val() == "") {
             $("#interest-subject-input").removeClass("success");
         } else {
@@ -156,7 +156,7 @@ function reviewHeight() {
         if ($(this).height() > tallestSlide)
             tallestSlide = $(this).height();
     });
-    
+
     $(".slide-testimonial").each(function() {
         $(this).height(tallestSlide);
     });
@@ -196,14 +196,32 @@ jQuery(document).ready(function ($) {
             $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(0)"});
             $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(100%)"});
             $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(200%)"});
+            $("#testimonials-container .testimonial:nth-child(4)").css({"transform": "translateX(300%)"});
+            $("#testimonials-container .testimonial:nth-child(5)").css({"transform": "translateX(400%)"});
         } else if (currentSlide === 2) {
             $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(-100%)"});
             $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(0)"});
             $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(100%)"});
+            $("#testimonials-container .testimonial:nth-child(4)").css({"transform": "translateX(200%)"});
+            $("#testimonials-container .testimonial:nth-child(5)").css({"transform": "translateX(300%)"});
         } else if (currentSlide === 3) {
             $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(-200%)"});
             $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(-100%)"});
             $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(0)"});
+            $("#testimonials-container .testimonial:nth-child(4)").css({"transform": "translateX(100%)"});
+            $("#testimonials-container .testimonial:nth-child(5)").css({"transform": "translateX(200%)"});
+        } else if (currentSlide === 4) {
+            $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(-300%)"});
+            $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(-200%)"});
+            $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(-100%)"});
+            $("#testimonials-container .testimonial:nth-child(4)").css({"transform": "translateX(0)"});
+            $("#testimonials-container .testimonial:nth-child(5)").css({"transform": "translateX(100%)"});
+        } else if (currentSlide === 5) {
+            $("#testimonials-container .testimonial:nth-child(1)").css({"transform": "translateX(-400%)"});
+            $("#testimonials-container .testimonial:nth-child(2)").css({"transform": "translateX(-300%)"});
+            $("#testimonials-container .testimonial:nth-child(3)").css({"transform": "translateX(-200%)"});
+            $("#testimonials-container .testimonial:nth-child(4)").css({"transform": "translateX(-100%)"});
+            $("#testimonials-container .testimonial:nth-child(5)").css({"transform": "translateX(0)"});
         }
 
         if (inReverse) {
@@ -214,8 +232,8 @@ jQuery(document).ready(function ($) {
             }
         } else {
             currentSlide += 1;
-            if (currentSlide === 4) {
-                currentSlide = 2;
+            if (currentSlide === 6) {
+                currentSlide = 4;
                 inReverse = true;
             }
         }

@@ -14034,6 +14034,14 @@ body:not(.no-transition) #wrapper,
     transform: translateX(200%);
 }
 
+.testimonial:nth-child(4) {
+    transform: translateX(300%);
+}
+
+.testimonial:nth-child(5) {
+    transform: translateX(400%);
+}
+
 .testimonial .message {
     margin-bottom: 20px;
     font-size: 18px;

@@ -273,9 +273,21 @@ body {
 .animated-arrow {
     position: absolute;
     color: #FFF;
-    top: calc(80vh);
+    top: 80vh;
     font-size: 32px;
     cursor: pointer;
+}
+
+@media (min-width: 450px) and (max-width: 991px) {
+    .animated-arrow {
+        top: calc(80vh - 100px);
+    }
+}
+
+@media (max-width: 449px) {
+    .animated-arrow {
+        top: calc(80vh - 80px);
+    }
 }
 
 /* GENERAL SECTION AND CONTAINER STYLES */

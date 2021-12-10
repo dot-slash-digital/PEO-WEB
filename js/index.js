@@ -2,17 +2,21 @@
 
 $(window).scroll(() => {
     const scrollPos = $(document).scrollTop();
-    $(".parallax-slider").css({"transform" : "translateY( calc(" + scrollPos + "px * .6) )"});
-
     const contentFade = $(window).height();
     const contentFadehalf = contentFade/3;
 
-    if (scrollPos > (contentFadehalf)) {
-        $(".parallax-content").css({"opacity" : "calc( 1.0 - ((("+contentFadehalf+" - "+scrollPos+") * -.0025)))"});
+    if ($(window).width() > 449) {
+        $(".parallax-slider").css({"transform" : "translateY( calc(" + scrollPos + "px * .6) )"});
+        if (scrollPos > (contentFadehalf)) {
+            $(".parallax-content").css({"opacity" : "calc( 1.0 - ((("+contentFadehalf+" - "+scrollPos+") * -.0025)))"});
+        }
+        else {
+            $(".parallax-content").css({"opacity" : "1.0"});
+        }
     }
-    else {
-        $(".parallax-content").css({"opacity" : "1.0"});
-    }
+
+
+
 
     if (scrollPos > ($(window).height() - 100)) {
         $("#scroll-to-top").css({"visibility" : "visible"});

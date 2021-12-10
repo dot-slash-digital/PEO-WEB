@@ -1,481 +1,577 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en-US">
-    <head>
-        <title>Personal Eyes Opticians</title>
-        <meta name="author" content="Matthew Bierman" />
-        <meta name="description" content="" />
-        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+    <title>Personal Eyes Opticians</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-        <!-- Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116690774-1"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'UA-116690774-1');
-        </script>
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116690774-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-116690774-1');
+    </script>
 
-        <!-- Favicons -->
-        <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-        <link rel="manifest" href="favicons/site.webmanifest">
-        <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#000000">
-        <link rel="shortcut icon" href="favicons/favicon.ico">
-        <meta name="apple-mobile-web-app-title" content="Personal Eyes Opticians">
-        <meta name="application-name" content="Personal Eyes Opticians">
-        <meta name="msapplication-TileColor" content="#ffffff">
-        <meta name="msapplication-config" content="favicons/browserconfig.xml">
-        <meta name="theme-color" content="#ffffff">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/site.webmanifest">
+    <link rel="mask-icon" href="favicons/safari-pinned-tab.svg" color="#000000">
+    <link rel="shortcut icon" href="favicons/favicon.ico">
+    <meta name="apple-mobile-web-app-title" content="Personal Eyes Opticians">
+    <meta name="application-name" content="Personal Eyes Opticians">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-config" content="favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 
-        <!-- CSS -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700|Roboto:300,400,500,700" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
-        <link rel="stylesheet" href="css/style.css" type="text/css" />
-        <link rel="stylesheet" href="css/onepage.css" type="text/css" />
-        <link rel="stylesheet" href="css/dark.css" type="text/css" />
-        <link rel="stylesheet" href="css/animate.css" type="text/css" />
-        <link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
-        <link rel="stylesheet" href="css/fonts.css" type="text/css" />
-        <link rel="stylesheet" href="css/responsive.css" type="text/css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/constants.css">
 
-        <!-- FontAwesome CSS -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    </head>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Source+Sans+Pro:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div id="home" class="wrapper">
 
-    <body class="stretched side-header">
-        <div id="wrapper" class="clearfix">
+        <!-- NAVBAR -->
 
-            <!-- Header -->
-            <header id="header" class="no-sticky">
-                <div id="header-wrap">
-                    <div class="container clearfix">
-                        <!-- Menu Icon -->
-                        <div id="primary-menu-trigger"><i class="fas fa-bars"></i></div>
-
-                        <!-- Logo -->
-                        <div id="logo" style="text-align: center">
-                            <img src="images/logo.png">
-                            <br>
-                        </div>
-
-                        <!-- Menu -->
-                        <nav id="primary-menu">
-                            <ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="-10">
-                                <li><a href="#" data-href="#slider"><div>Home</div></a></li>
-                                <li><a href="#" data-href="#section-about"><div>About</div></a></li>
-                                <li><a href="#" data-href="#section-eyewear"><div>Eyewear</div></a></li>
-                                <li><a href="#" data-href="#section-reviews"><div>Reviews</div></a></li>
-                                <li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
-                            </ul>
-                        </nav>
-
-                        <!-- Social Media Icons -->
-                        <div class="clearfix d-none d-lg-block" style="text-align: center">
-                            <a class="icons-menu" href="tel:7022581944" style="margin-left: 0">
-                                <i class="fas fa-phone"></i>
-                            </a>
-                            <a class="icons-menu" href="https://www.facebook.com/personaleyeslasvegas">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a class="icons-menu" href="https://www.instagram.com/personaleyesopticians">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                            <a class="icons-menu" href="mailto:nancy@personaleyeslasvegas.com">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </header>
-
-            <!-- Jumbotron -->
-            <section id="slider" class="slider-element slider-parallax full-screen force-full-screen">
-                <div class="slider-parallax-inner">
-                    <div class="full-screen force-full-screen dark section nopadding nomargin noborder ohidden">
-                        <div class="container center">
-                            <div class="vertical-middle">
-                                <div class="emphasis-title">
-                                    <h1>
-                                        <span class="t400 font-body" style="color: white;">Your face deserves our best...<br>Come "SEE" the difference!</span>
-                                    </h1>
-                                </div>
-                                <a href="tel:7022581944" class="button button-border button-light button-rounded"><i class="fas fa-phone"></i> (702) 258-1944</a>
-                            </div>
-                        </div>
-                        <div class="video-wrap">
-                            <div class="video-overlay" style="background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5), rgba(0,0,0,0.35))"></div>
-                        </div>
-                        <a href="#" data-scrollto="#section-about" data-easing="easeInOutExpo" data-speed="1250" data-offset="0" class="one-page-arrow dark"><i class="fas fa-chevron-down infinite animated fadeInDown"></i></a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Body -->
-            <section id="content">
-                <div class="content-wrap nopadding">
-                    <!-- Intro -->
-                    <div class="clear" style="height: 120px"></div>
-                    <div>
-                        <p class="lead divcenter center" style="max-width: 800px; padding: 0 16px">
-                            Nancy Edwards, owner and operator of Personal Eyes, began her career in the optical industry in 1979 with Benson Optical.  Nancy became licensed and served as the area manager for the Las Vegas/Carson City area.
-                        </p>
-                        <p class="lead divcenter center" style="max-width: 800px; padding: 0 16px">
-                            In 1989, Nancy opened Personal Eyes Opticians, an owner-operated business located in the Summerlin area of Las Vegas.
-                        </p>
-                        <p class="lead divcenter center" style="max-width: 800px; padding: 0 16px">
-                            Today's eyewear is extremely deliberate, defining and fun! Eyewear can artistically accessorize and express your face even before you speak. Whether you are looking for unique fashion on a budget or the finest in designer eyewear, you always have many choices at Personal Eyes!
-                        </p>
-                        <p class="lead divcenter center bottommargin" style="max-width: 800px; padding: 0 16px">
-                            Never underestimate the power of what you wear, especially what is framing your face! Your face deserves our best... Come SEE the difference!
-                        </p>
-                    </div>
-
-                    <!-- About -->
-                    <div id="section-about" class="center page-section nopadding">
-                        <div class="container clearfix" style="padding: 0 15px">
-                            <div class="clear" style="height: 120px"></div>
-                            <div class="row">
-                                <!-- Hours -->
-                                <div class="col" style="margin-top: 25px">
-                                    <h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px; margin-bottom: 20px !important">Hours</h2>
-                                    <p id="smart-hours" style="margin-bottom: 15px"></p>
-                                    <div class="row" style="width: 250px; margin: 0 auto">
-                                        <div class="col days" style="padding: 0"></div>
-                                        <div class="col hours" style="padding: 0"></div>
-                                    </div>
-                                    <p style="margin: 25px auto; width: 300px">Limited hours due to COVID-19, outside appointments available upon request</p>
-                                    <a href="https://www.facebook.com/personaleyeslasvegas/" class="button button-border button-rounded"data-easing="easeInOutExpo" data-speed="1250" data-offset="70"><i class="far fa-thumbs-up"></i> Like us on Facebook</a>
-                                    <p>and save 10% on your next purchase!</p>
-                                </div>
-
-                                <!-- Specials
-                                <div class="col" style="margin-top: 25px">
-                                    <h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px; margin-bottom: 20px !important">Special Offer</h2>
-                                    <img src="images/nextgen.jpg">
-                                </div> -->
-
-                                <!-- Location -->
-                                <div class="col" style="margin-top: 25px">
-                                    <h2 class="divcenter bottommargin font-body" style="max-width: 700px; font-size: 40px; margin-bottom: 20px !important">Location</h2>
-                                    <img src="images/storefront.png" style="width: 250px">
-                                    <p class="lead" style="margin-top: 20px">7260 W Lake Mead Blvd, Suite 4<br>Las Vegas, NV 89128</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="clear" style="height: 120px"></div>
-                    </div>
-
-                    <!-- Text 1 -->
-                    <div class="section nomargin">
-                        <div class="container clearfix">
-                            <div class="divcenter center" style="max-width: 900px;">
-                                <h2 class="t300 ls1">Our store provides the ultimate in customer service, paying close attention to detail.  We are able to fit you with just the perfect look in frames, while filling your prescription with the latest technology in lens designs and enhancements.</h2>
-                                <h2 class="nobottommargin t300 ls1">We accept most major insurance, including FSA, HSA, and EyeMed Vision Care.</h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Eyewear -->
-                    <div id="section-eyewear" class="page-section" style="padding: 120px 0">
-                        <!-- Portfolio -->
-                        <div id="portfolio">
-                            <div class="p-item">
-                                <div><img src="images/eyewear/bottega-veneta.png"></div>
-                                <p class="p-item-text">Elegance with attitude</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/alain-mikli.png"></div>
-                                <p class="p-item-text">Provocative designs with a passion for color</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/tom-ford.png"></div>
-                                <p class="p-item-text">Sophisticated signature fashion</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/oliver-peoples.png"></div>
-                                <p class="p-item-text">Timeless iconic eyewear</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/anne-et-valentin.png"></div>
-                                <p class="p-item-text">Art inspired eyewear from France</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/chanel.png"></div>
-                                <p class="p-item-text">Fine casual elegance</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/lafont.png"></div>
-                                <p class="p-item-text">Parisian chic</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/gucci.png"></div>
-                                <p class="p-item-text">Bold distinctive fashion</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/salt.png"></div>
-                                <p class="p-item-text">Timeless eyewear inspired by effortless beauty</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/silhouette.png"></div>
-                                <p class="p-item-text">Maximum comfort with minimalism and purism styling</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/krewe.png"></div>
-                                <p class="p-item-text">Introducing individual style with southern modern flair</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/maui-jim.png"></div>
-                                <p class="p-item-text">Clarity at its best, optimum Polarized Plus2 lens technology</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/maui-jim-sunglasses.png"></div>
-                                <p class="p-item-text">Introducing RX frames, casual comfort stylistically designed</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/wiley-x.png"></div>
-                                <p class="p-item-text">New generation sporty eyewear</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/lafont-kids.png"></div>
-                                <p class="p-item-text">Colorful chic kids collection</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/eyebobs.png"></div>
-                                <p class="p-item-text">Bold fashion readers</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/thin-optics.png"></div>
-                                <p class="p-item-text">Lightest &amp; thinnest readers in the world</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/oyobox.png"></div>
-                                <p class="p-item-text">Fine eyewear organizers</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/peepers.png"></div>
-                                <p class="p-item-text">Upbeat readers with a lighthearted spirit</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/frederic-beausoleil.png"></div>
-                                <p class="p-item-text">Unique artistic French vintage</p>
-                            </div>
-                            <div class="p-item">
-                                <div><img src="images/eyewear/anne-et-valentin.png"></div>
-                                <p class="p-item-text">Art inspired <b>kids collection</b> from France</p>
-                            </div>
-                            <div style="clear: both"></div>
-                        </div>
-                    </div>
-
-                    <!-- Text 2 -->
-                    <div class="page-section section nomargin nopadding">
-                        <div class="container clearfix" style="padding-top: 100px; padding-bottom: 100px">
-                            <div class="divcenter center" style="max-width: 900px;">
-                                <h2 class="nobottommargin t300 ls1">Since 1989, Personal Eyes Opticians has provided Las Vegas with unique, fashion-forward eyewear for the whole family.</h2>
-                            </div>
-
-                            <div class="center" style="padding: 60px 0 10px 0">Can't find what you're looking for? Give us a call!</div>
-                            <div class="center">
-                                <a href="tel:7022581944" class="button button-border button-circle t600">
-                                    <i class="fas fa-phone"></i> (702) 258-1944
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Reviews -->
-                    <div id="section-reviews" class="page-section nopadding">
-                        <div id="testimonials-background" class="section nomargin dark">
-                            <div id="testimonials-container">
-                                <div class="testimonial">
-                                    <div class="message">Ok, this is the difference between an 'optician' and a 'store that sells glasses'. Nancy is the absolute best at what she does. She knows her inventory and she can get the perfect glasses to frame your face, hair and even your personality! It is amazing to be able to get this type of service at a very approachable price point.</div>
-                                    <div class="author">— Paul A.</div>
-                                    <div class="source">Yelp</div>
-                                </div>
-                                <div class="testimonial">
-                                    <div class="message">Nancy, the owner, is extremely knowledgable and always helps me select the perfect pair of glasses. I continually get compliments. She has the absolute best selection in town with the latest trends along with classic styles. She carries designers that are not available anywhere else in town. Love this place and Nancy!</div>
-                                    <div class="author">— Solveig R.</div>
-                                    <div class="source">Facebook</div>
-                                </div>
-                                <div class="testimonial">
-                                    <div class="message">Excellent selection of inventory. And Nancy is amazing!!! She is so good at helping you pick a frame type that looks great on you. Love shopping at Personal Eyes!</div>
-                                    <div class="author">— Lorrie E.</div>
-                                    <div class="source">Yelp</div>
-                                </div>
-                                <div class="testimonial">
-                                    <div class="message">I have been going to Personal Eyes Opticians for ten years. Nancy has great choices for distinctive eye wear that no one else has. In 2002, I went to France and wanted to buy a beautiful Parisian frame but could not make up my mind and came home empty-handed. Here in Las Vegas, I can get those beautiful distinctive frames for a reasonable cost.</div>
-                                    <div class="author">— Maureen M.</div>
-                                    <div class="source">Yelp</div>
-                                </div>
-                                <div class="testimonial">
-                                    <div class="message">I've been coming to Nancy for several years, and I'm never disappointed! She isn't just selling glasses--she knows style, facial structure, lens, fit. The frames she suggested were not at all what I came in for, but my my how good they look! My teenaged son even said, "Mom--those look really great." I trust this woman. She knows her stuff.</div>
-                                    <div class="author">— Fleur B.</div>
-                                    <div class="source">Yelp</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Contact -->
-                    <div id="section-contact" class="page-section nopadding">
-                        <div class="container clearfix">
-                            <div class="clear" style="height: 120px"></div>
-                            <div class="divcenter topmargin" style="max-width: 850px;">
-                                <div>
-                                    <h2 class="divcenter bottommargin font-body center" style="max-width: 700px; font-size: 40px;">Contact Us</h2>
-                                    <form id="contact-form" class="nobottommargin" action="https://formspree.io/nancy@personaleyeslasvegas.com" method="POST">
-                                        <div class="col_half">
-                                            <input id="contact-name-input" class="sm-form-control border-form-control required" type="text" name="Name" placeholder="Name *" />
-                                        </div>
-                                        <div class="col_half col_last">
-                                            <input id="contact-email-input" class="email sm-form-control border-form-control required" type="email" name="_replyto" placeholder="Email Address *" />
-                                        </div>
-                                        <div class="clear"></div>
-                                        <div class="col_one_third">
-                                            <input id="contact-phonenumber-input" class="sm-form-control border-form-control" type="text" name="Phone Number" value="" placeholder="Phone Number" />
-                                        </div>
-                                        <div class="col_two_third col_last">
-                                            <input id="contact-subject-input" class="sm-form-control border-form-control" type="text" name="Subject" placeholder="Subject" />
-                                        </div>
-                                        <div class="clear"></div>
-                                        <div class="col_full">
-                                            <textarea id="contact-message-input" class="sm-form-control border-form-control required" name="Message" placeholder="Your Message *" style="height: 150px !important"></textarea>
-                                        </div>
-                                        <div class="col_full center">
-                                            <button class="button button-border button-circle t500 noleftmargin topmargin-sm" type="submit" value="submit">Send Message</button>
-                                            <br>
-                                            <small style="display: block; font-size: 13px; margin-top: 15px">We'll do our best to get back to you within 1-2 business days!</small>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="clear" style="height: 120px"></div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- Footer -->
-            <footer id="footer" class="dark noborder">
-                <!-- Map and Business Info -->
-                <div class="center" style="margin: 0; padding: 0">
-                    <div class="footer-widgets-wrap" style="padding: 0">
-                        <div class="row divcenter clearfix">
-                            <div id="headquarters-map" class="col-lg-7 col-md-7 gmap d-none d-md-block"></div>
-                            <div class="col-lg-5 col-md-5">
-                                <div class="widget clearfix">
-                                    <!-- Business Name -->
-                                    <h4>Personal Eyes Opticians</h4>
-
-                                    <!-- Hours -->
-                                    <div class="row" style="width: 250px; margin: 0 auto">
-                                        <div class="col days" style="padding: 0"></div>
-                                        <div class="col hours" style="padding: 0"></div>
-                                    </div>
-
-                                    <!-- Location -->
-                                    <p class="lead" style="margin-top: 50px">7260 W Lake Mead Blvd, Suite 4<br>Las Vegas, NV 89128</p>
-
-                                    <!-- Social Media Icons -->
-                                    <div class="center topmargin-sm">
-                                        <a class="icons-footer" href="tel:7022581944">
-                                            <i class="fas fa-phone"></i>
-                                        </a>
-                                        <a class="icons-footer" href="https://www.facebook.com/personaleyeslasvegas">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                        <a class="icons-footer" href="https://www.instagram.com/personaleyesopticians">
-                                            <i class="fab fa-instagram"></i>
-                                        </a>
-                                        <a class="icons-footer" href="https://twitter.com/personaleyeslv">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                        <a class="icons-footer" href="mailto:nancy@personaleyeslasvegas.com">
-                                            <i class="fas fa-envelope"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Copyright -->
-                <div id="copyrights">
-                    <div class="container clearfix">
-                        <div class="copyright-text-left">
-                            Personal Eyes Opticians &copy; 2021 All Rights Reserved
-                        </div>
-                        <div class="copyright-text-right">
-                            Created by <a href="https://dotslashdigital.com">Dot Slash Digital</a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
+        <div class="nav">
+            <a class="mobile-menu">
+                <i class="bi bi-list"></i>
+            </a>
+            <div class="nav-top">
+                <img class="peo-logo" src="images/logo.png">
+            </div>
+            <div class="nav-line-vert"></div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link navbar-text">home</a>
+                <div class="nav-line-hor"></div>
+                <a href="#about" class="nav-link navbar-text">about</a>
+                <div class="nav-line-hor"></div>
+                <a href="#eyewear" class="nav-link navbar-text">eyewear</a>
+                <div class="nav-line-hor"></div>
+                <a href="#reviews" class="nav-link navbar-text">reviews</a>
+                <div class="nav-line-hor"></div>
+                <a href="#contact" class="nav-link navbar-text">contact</a>
+            </div>
+            <div class="nav-line-vert"></div>
+            <div class="nav-icons-wrapper">
+                <a href="tel:7022581944" class="sm-link">
+                    <i class="bi bi-telephone-fill"></i>
+                </a>
+                <a href="https://www.facebook.com/personaleyeslasvegas" target="_blank" class="sm-link">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/personaleyesopticians" target="_blank" class="sm-link">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="mailto:nancy@personaleyeslasvegas.com" class="sm-link">
+                    <i class="bi bi-envelope-fill"></i>
+                </a>
+            </div>
         </div>
 
-        <!-- Go To Top -->
-        <div id="gotoTop"><i class="fas fa-chevron-up" style="margin-top: 9px"></i></div>
+        <!-- SCROLLABLE PAGE CONTENT WRAPPER -->
 
-        <div id="email-banner">
-            <div>
-                <div>
-                    <span class="lead">Get our email updates for the latest promotions and discounts!</span>
+        <div class="content">
+
+            <!-- PARALLAX JUMBOTRON -->
+
+            <div class="parallax-wrapper gpu-accelerated">
+                <div class="parallax-slider gpu-accelerated">
+                    <div class="parallax-gradient gpu-accelerated">
+                        <div class="parallax-content gpu-accelerated">
+                            <div class="parallax-text jumbotron-header-text gpu-accelerated">Your face deserves our best...<br>Come "SEE" the difference!</div>
+                            <a href="tel:7022581944" class="gpu-accelerated">
+                                <button  class="jumbotron-button-text gpu-accelerated"><i class="bi bi-telephone-fill"></i>(702) 258-1944</button>
+                            </a>
+                        </div>
+                        <a href="#intro" class="animated-arrow gpu-accelerated">
+                            <i class="bi bi-chevron-down"></i>
+                        </a>
+                    </div>
                 </div>
-                <div>
-                    <a href="http://eepurl.com/dDl15T" target="_blank">
-                        <button class="btn">Subscribe</button>
+            </div>
+
+            <!-- INTRO SECTION -->
+
+            <div id="intro" class="section intro">
+                <div class="container">
+                    <div class="intro-paragraph intro-section-text">
+                        Nancy Edwards, owner and operator of Personal Eyes, began her career in the optical industry in 1979 with Benson Optical.
+                        Nancy became licensed and served as the area manager for the Las Vegas/Carson City area.
+                    </div>
+                    <div class="intro-paragraph intro-section-text">
+                        In 1989, Nancy opened Personal Eyes Opticians, an owner-operated business located in the Summerlin area of Las Vegas.
+                    </div>
+                    <div class="intro-paragraph intro-section-text">
+                        Today's eyewear is extremely deliberate, defining and fun! Eyewear can artistically accessorize and express your face even
+                        before you speak. Whether you are looking for unique fashion on a budget or the finest in designer eyewear, you always
+                        have many choices at Personal Eyes!
+                    </div>
+                    <div class="intro-paragraph intro-section-text">
+                        Never underestimate the power of what you wear, especially what is framing your face! Your face deserves our best...
+                        Come SEE the difference!
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOCATION AND HOURS -->
+
+            <div id="about" class="section location-and-hours">
+                <div class="container">
+                    <div class="two-columns">
+                        <div class="hours">
+                            <div class="hours-wrapper">
+                                <div class="header-text">Hours</div>
+                                <div id="smart-hours" class="brand-captions"></div>
+                                <div class="hours-row">
+                                    <div class="hours-left-column brand-captions"></div>
+                                    <div class="hours-right-column brand-captions"></div>
+                                </div>
+                            </div>
+                            <div class="covid-caption brand-captions">Limited hours due to COVID-19, outside appointments available upon request</div>
+                            <a href="https://www.facebook.com/personaleyeslasvegas" target="_blank">
+                                <button class="hours-button-text"><i class="bi bi-hand-thumbs-up"></i>LIKE US ON FACEBOOK</button>
+                            </a>
+                            <div class="hours-button-caption brand-captions">and save 10% on your next purchase!</div>
+                        </div>
+                        <div class="location">
+                            <div class="header-text">Location</div>
+                            <img src="images/storefront.png">
+                            <div class="location-image-caption">7260 W Lake Mead&nbspBlvd,&nbspSuite&nbsp4<br>Las Vegas, NV 89128</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MISSION STATEMENT -->
+
+            <div class="section mission-statement">
+                <div class="container">
+                    <div class="mission-statement-paragraph mission-statement-text">
+                        Our store provides the ultimate in customer service, paying close attention to detail.
+                        We are able to fit you with just the perfect look in frames, while filling your prescription
+                        with the latest technology in lens designs and enhancements.
+                    </div>
+                    <div class="mission-statement-paragraph mission-statement-text">
+                        We accept most major insurance, including FSA, HSA, and EyeMed Vision Care.
+                    </div>
+                </div>
+            </div>
+
+            <!-- LOGO GRID -->
+
+            <div id="eyewear" class="section brands">
+                <div class="container">
+                    <div class="logo-grid">
+                        <!-- BOTTEGA VENETA -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/bottega-veneta.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Elegance with attitude
+                            </div>
+                        </div>
+                        <!-- ALAIN MIKLI -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/alain-mikli.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Provocative designs with a passion for color
+                            </div>
+                        </div>
+                        <!-- TOM FORD -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/tom-ford.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Sophisticated signature fashion
+                            </div>
+                        </div>
+                        <!-- OLIVER PEOPLES -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/oliver-peoples.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Timeless iconic eyewear
+                            </div>
+                        </div>
+                        <!-- ANNE ET VALENTIN -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/anne-et-valentin.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Art inspired eyewear from France
+                            </div>
+                        </div>
+                        <!-- CHANEL -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/chanel.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Fine casual elegance
+                            </div>
+                        </div>
+                        <!-- LAFONT -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/lafont.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Parisian chic
+                            </div>
+                        </div>
+                        <!-- GUCCI -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/gucci.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Bold distinctive fashion
+                            </div>
+                        </div>
+                        <!-- SALT -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/salt.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Timeless eyewear inspired by effortless beauty
+                            </div>
+                        </div>
+                        <!-- SILHOUETTE -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/silhouette.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Maximum comfort with minimalism and purism styling
+                            </div>
+                        </div>
+                        <!-- KREWE -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/krewe.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Introducing individual style with southern modern flair
+                            </div>
+                        </div>
+                        <!-- MAUI JIM -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/maui-jim.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Clarity at its best, optimum Polarized Plus2 lens technology
+                            </div>
+                        </div>
+                        <!-- MAUI JIM SUNGLASSES -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/maui-jim-sunglasses.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Introducing RX frames, casual comfort stylistically designed
+                            </div>
+                        </div>
+                        <!-- WILEY X -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/wiley-x.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                New generation sporty eyewear
+                            </div>
+                        </div>
+                        <!-- LAFONT KIDS -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/lafont-kids.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Colorful chic kids collection
+                            </div>
+                        </div>
+                        <!-- EYEBOBS -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/eyebobs.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Bold fashion readers
+                            </div>
+                        </div>
+                        <!-- THIN OPTICS -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/thin-optics.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Lightest & thinnest readers in the world
+                            </div>
+                        </div>
+                        <!-- OYOBOX -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/oyobox.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Fine eyewear organizers
+                            </div>
+                        </div>
+                        <!-- PEEPERS -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/peepers.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Upbeat readers with a lighthearted spirit
+                            </div>
+                        </div>
+                        <!-- FREDERIC BEAUSOLEIL -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/frederic-beausoleil.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Unique artistic French vintage
+                            </div>
+                        </div>
+                        <!-- ANNE ET VALENTIN KIDS -->
+                        <div class="grid-item">
+                            <div class="brand-logo-wrapper">
+                                <img src="images/brands/anne-et-valentin.png">
+                            </div>
+                            <div class="grid-item-caption brand-captions">
+                                Art inspired <b>kids collection</b> from France
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA -->
+
+            <div class="section cta">
+                <div class="container">
+                    <div class="mission-statement-paragraph mission-statement-text">
+                        Since 1989, Personal Eyes Opticians has provided Las Vegas with unique,
+                        fashion-forward eyewear for the whole family.
+                    </div>
+                    <div class="cta-caption brand-captions">
+                        Can't find what you're looking for? Give us a call!
+                    </div>
+                    <a href="tel:7022581944">
+                        <button class="cta-button-text"><i class="bi bi-telephone-fill"></i>(702) 258-1944</button>
                     </a>
                 </div>
             </div>
-            <div id="email-banner-close">
-                <span><i class="fas fa-times"></i></span>
+
+
+            <!-- TESTIMONIALS -->
+
+            <div id="reviews" class="section testimonials">
+                <div class="testimonials-background">
+                    <div id="testimonials-container">
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <div class="message testimonial-message-text">
+                                    Ok, this is the difference between an 'optician' and a 'store that sells glasses'. Nancy is the absolute
+                                    best at what she does. She knows her inventory and she can get the perfect glasses to frame your face, hair
+                                    and even your personality! It is amazing to be able to get this type of service at a very approachable price point.
+                                </div>
+                                <div class="author testimonial-author-text">— Paul A.</div>
+                                <div class="source testimonial-source-text">Yelp</div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <div class="message testimonial-message-text">
+                                    Nancy, the owner, is extremely knowledgable and always helps me select the perfect pair of glasses. I continually
+                                    get compliments. She has the absolute best selection in town with the latest trends along with classic styles. She
+                                    carries designers that are not available anywhere else in town. Love this place and Nancy!
+                                </div>
+                                <div class="author testimonial-author-text">— Solveig R.</div>
+                                <div class="source testimonial-source-text">Facebook</div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <div class="message testimonial-message-text">
+                                    Excellent selection of inventory. And Nancy is amazing!!! She is so good at helping you pick a frame type that
+                                    looks great on you. Love shopping at Personal Eyes!
+                                </div>
+                                <div class="author testimonial-author-text">— Lorrie E.</div>
+                                <div class="source testimonial-source-text">Yelp</div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <div class="message testimonial-message-text">
+                                    I have been going to Personal Eyes Opticians for ten years. Nancy has great choices for distinctive eye wear that
+                                    no one else has. In 2002, I went to France and wanted to buy a beautiful Parisian frame but could not make up my
+                                    mind and came home empty-handed. Here in Las Vegas, I can get those beautiful distinctive frames for a reasonable cost.
+                                </div>
+                                <div class="author testimonial-author-text">— Maureen M.</div>
+                                <div class="source testimonial-source-text">Yelp</div>
+                            </div>
+                        </div>
+                        <div class="testimonial">
+                            <div class="testimonial-inner">
+                                <div class="message testimonial-message-text">
+                                    I've been coming to Nancy for several years, and I'm never disappointed! She isn't just selling glasses--she knows
+                                    style, facial structure, lens, fit. The frames she suggested were not at all what I came in for, but my my how
+                                    good they look! My teenaged son even said, "Mom--those look really great." I trust this woman. She knows her stuff.
+                                </div>
+                                <div class="author testimonial-author-text">— Fleur B.</div>
+                                <div class="source testimonial-source-text">Yelp</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- CONTACT FORM -->
+
+            <div id="contact" class="section contact-form">
+                <div class="container">
+                    <div class="header-text">Contact Us</div>
+                    <form id="contact-form" action="https://formspree.io/nancy@personaleyeslasvegas.com" method="post">
+                        <div class="form-row">
+                            <input id="name-input" class="contact-form-text" type="text" name="Name" placeholder="Name *" />
+                            <input id="email-address-input" class="contact-form-text" type="email" name="email" placeholder="Email Address *" />
+                        </div>
+                        <div class="form-row">
+                            <input id="phone-input" class="contact-form-text" type="tel" name="Phone Number" placeholder="Phone Number" />
+                            <input id="subject-input" class="contact-form-text" type="text" name="Subject" placeholder="Subject" />
+                        </div>
+                        <textarea id="message-input" class="contact-form-text" name="Message" placeholder="Your Message *"></textarea>
+                        <button class="cta-button-text" type="submit" value="submit">SEND MESSAGE</button>
+                        <div class="contact-form-caption brand-captions">
+                            We'll do our best to get back to you within 1-2 business days!
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+            <!-- MAP AND HOURS -->
+
+            <div class="section map-and-hours">
+                <div class="two-columns">
+                    <div class="map">
+                        <div id="headquarters-map"></div>
+                    </div>
+                    <div class="footer-hours">
+                        <div class="thin-title-text">PERSONAL EYES OPTICIANS</div>
+                        <div class="hours-wrapper">
+                            <div class="hours-row">
+                                <div class="hours-left-column brand-captions"></div>
+                                <div class="hours-right-column brand-captions"></div>
+                            </div>
+                        </div>
+                        <div class="location-image-caption">7260 W Lake Mead&nbspBlvd,&nbspSuite&nbsp4<br>Las Vegas, NV 89128</div>
+                        <div class="footer-icons-wrapper">
+                            <a href="tel:7022581944" class="sm-link">
+                                <i class="bi bi-telephone-fill"></i>
+                            </a>
+                            <a href="https://www.facebook.com/personaleyeslasvegas" target="_blank" class="sm-link">
+                                <i class="bi bi-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/personaleyesopticians" target="_blank" class="sm-link">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                            <a href="mailto:nancy@personaleyeslasvegas.com" class="sm-link">
+                                <i class="bi bi-envelope-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER -->
+
+            <div class="section footer">
+                <div class="container">
+                    <div class="footer-text-wrapper">
+                        <div class="footer-text">Personal Eyes Opticians © 2021 All Rights Reserved</div>
+                        <div class="footer-text">Created by <a href="https://dotslashdigital.com" target="_blank">Dot Slash Digital</a></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SCROLL-TO-TOP STICKY BUTTON -->
+
+            <a href="#home" id="scroll-to-top"><i class="bi bi-chevron-up"></i></a>
+
+            <!-- PROMO BANNER -->
+
+            <div class="promo-banner">
+                <div class="promo-message promo-banner-text">
+                    Get our email updates for the latest promotions and discounts!
+                </div>
+                <a href="http://eepurl.com/dDl15T">
+                    <button class="promo-button-text">Subscribe</button>
+                </a>
+                <div class="close-button">
+                    <i class="bi bi-x"></i>
+                </div>
             </div>
         </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="js/index.js"></script>
 
-        <!-- JavaScript -->
-        <script src="js/jquery.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/functions.js"></script>
-        <script src="js/custom.js"></script>
-
-        <!-- Google Map JavaScripts -->
-        <script src="https://maps.google.com/maps/api/js?key=AIzaSyDQjju9xIaI-kaEbY78l9-jDGx5STpu1cA"></script>
-        <script src="js/jquery.gmap.js"></script>
-        <script>
-            jQuery(window).on( 'load', function(){
-
-                // Google Map
-                jQuery('#headquarters-map').gMap({
-                    address: '7260 W Lake Mead Blvd, Las Vegas, NV 89128',
-                    maptype: 'ROADMAP',
-                    zoom: 15,
-                    markers: [
-                        {
-                            address: "7260 W Lake Mead Blvd, Las Vegas, NV 89128",
-                            html: "7260 W Lake Mead Blvd, Las Vegas, NV 89128",
-                            icon: {
-                                image: "images/map-icon-red.png",
-                                iconsize: [32, 32],
-                                iconanchor: [14,44]
-                            }
+    <!-- Google Map JavaScripts -->
+    <script src="https://maps.google.com/maps/api/js?key=AIzaSyDQjju9xIaI-kaEbY78l9-jDGx5STpu1cA"></script>
+    <script src="js/jquery.gmap.js"></script>
+    <script>
+        jQuery(window).on( 'load', function(){
+            // Google Map
+            jQuery('#headquarters-map').gMap({
+                address: '7260 W Lake Mead Blvd, Las Vegas, NV 89128',
+                maptype: 'ROADMAP',
+                zoom: 15,
+                markers: [
+                    {
+                        address: "7260 W Lake Mead Blvd, Las Vegas, NV 89128",
+                        html: "7260 W Lake Mead Blvd, Las Vegas, NV 89128",
+                        icon: {
+                            image: "images/map-icon-red.png",
+                            iconsize: [32, 32],
+                            iconanchor: [14,44]
                         }
-                    ],
-                    doubleclickzoom: false,
-                    controls: {
-                        panControl: true,
-                        zoomControl: true,
-                        mapTypeControl: false,
-                        scaleControl: false,
-                        streetViewControl: false,
-                        overviewMapControl: false
-                    },
-                    styles: [{"featureType": "administrative.land_parcel", "elementType": "labels", "stylers": [{"visibility": "off"}]},
-                             {"featureType": "poi", "elementType": "labels", "stylers": [{"visibility": "off"}]},
-                             {"featureType": "poi", "elementType": "labels.text", "stylers": [{"visibility": "off"}]}]});
-            });
-        </script>
-    </body>
+                    }
+                ],
+                doubleclickzoom: false,
+                controls: {
+                    panControl: true,
+                    zoomControl: true,
+                    mapTypeControl: false,
+                    scaleControl: false,
+                    streetViewControl: false,
+                    overviewMapControl: false
+                },
+                styles: [{"featureType": "administrative.land_parcel", "elementType": "labels", "stylers": [{"visibility": "off"}]},
+                         {"featureType": "poi", "elementType": "labels", "stylers": [{"visibility": "off"}]},
+                         {"featureType": "poi", "elementType": "labels.text", "stylers": [{"visibility": "off"}]}]});
+        });
+    </script>
+</body>
 </html>

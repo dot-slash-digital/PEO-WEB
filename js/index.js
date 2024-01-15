@@ -191,9 +191,9 @@ var hour = currentDate.getHours();
 var minute = currentDate.getMinutes();
 var day = days[currentDate.getDay()];
 
-if (currentDate.getMonth() == 2 && currentDate.getDate() <= 31 && currentDate.getFullYear() == 2020) {
-    $("#smart-hours").html("Closed until April 1st (due to COVID-19 mandate),<br /> by appointment only");
-    $("#smart-hours").css({"color": "#a94442", "font-weight": "bold"});
+if (currentDate.getMonth() == 0 && currentDate.getDate() == 15 && currentDate.getFullYear() == 2024) {
+  $("#smart-hours").html("Closed for Martin Luther King Jr. Day");
+  $("#smart-hours").css({ color: "#a94442", "font-weight": "bold" });
 } else if (day == "Monday" || day == "Tuesday" || day == "Wednesday" || day == "Thursday" || day == "Friday") {
     if (hour <= 8 || (hour == 16 && minute >= 1) || hour >= 17) // 12:00am - 8:59am, 4:01pm - 11:59pm
         currentlyClosed();

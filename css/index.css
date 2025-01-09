@@ -477,6 +477,10 @@ body {
   padding-bottom: 120px;
 }
 
+.section.brands .brand-captions {
+  display: none;
+}
+
 .logo-grid {
   display: grid;
 }

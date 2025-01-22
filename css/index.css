@@ -209,7 +209,7 @@ body {
 
 .parallax-slider {
   height: 100%;
-  background-image: url("../images/background_01.jpeg");
+  background-image: url("../images/jumbotron-bg.webp");
   background-size: cover;
   background-position: center top;
 }
@@ -217,11 +217,12 @@ body {
 .parallax-gradient {
   height: 100%;
   width: 100%;
-  background: linear-gradient(
+  /* background: linear-gradient(
     rgba(0, 0, 0, 0),
     rgba(0, 0, 0, 0.5),
     rgba(0, 0, 0, 0.35)
-  );
+  ); */
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,7 +447,17 @@ body {
 }
 
 .location img {
+  height: 320px;
   width: 250px;
+  object-fit: cover;
+  object-position: initial;
+}
+
+@media (max-width: 767px) {
+  .location img {
+    width: unset;
+    max-width: 100%;
+  }
 }
 
 .location-image-caption {
@@ -568,7 +579,7 @@ body {
 }
 
 .testimonials-background {
-  background-image: url("../images/background_02.jpeg");
+  background-image: url("../images/testimonials-bg.jpg");
   background-color: rgba(0, 0, 0, 0.55);
   background-blend-mode: color-dodge;
   background-size: cover;

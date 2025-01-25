@@ -209,7 +209,7 @@ body {
 
 .parallax-slider {
   height: 100%;
-  background-image: url("../images/jumbotron-bg.webp");
+  background-image: url("../images/jumbotron-bg.jpg");
   background-size: cover;
   background-position: center top;
 }

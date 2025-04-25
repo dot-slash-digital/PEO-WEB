@@ -540,6 +540,12 @@ body {
   max-height: 100%;
 }
 
+@media (max-width: 799px) {
+  .desktop-spacer {
+    display: none;
+  }
+}
+
 /* CTA */
 
 .section.cta {
